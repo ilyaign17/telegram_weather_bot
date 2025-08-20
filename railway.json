@@ -1,0 +1,15 @@
+{
+  "build": {
+    "builder": "Docker"
+  },
+  "deploy": {
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+  },
+  "volumes": [
+    {
+      "mountPath": "/mnt/data",
+      "name": "weather-db"
+    }
+  ]
+}
